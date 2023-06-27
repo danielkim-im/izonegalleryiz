@@ -2,4 +2,4 @@
 
 IZONE GALLERY*IZ is an entertainment service where users can explore the latest IZONE, a K-Pop group, content.
 
-Find out more about IZONE GALLERY*IZ project at https://danielkim.im/izonegalleryiz
+Find out more about IZONE GALLERY*IZ project at www.danielkim.im/izonegalleryiz
