@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IZ*ONE Gallery*IZ</string>
+    <string name="toolbar_app_name">IZ*ONE Gallery*IZ</string>
+
+    <string name="sign_in">サインイン</string>
+    <string name="sign_up">サインアップ</string>
+    <string name="intro_desc">定期的に更新される最新のIZONEの写真をご覧ください！</string>
+
+    <string name="email_verification_title">Eメールを確認します</string>
+    <string name="email_verification_desc">メール確認リンクの送信先：</string>
+    <string name="signinwithdifferentaccount_btn">別のアカウントでサインイン</string>
+    <string name="verifyEmailBtn">確認</string>
+
+    <string name="error_title">エラー</string>
+    <string name="error_desc1">予期せぬエラーが発生しました。.</string>
+    <string name="error_desc2">もう一度お試しください.</string>
+
+    <string name="login_hint_email">Eメール</string>
+    <string name="login_hint_password">パスワード</string>
+    <string name="login_title">サインイン</string>
+    <string name="login_desc">続行するにはサインインしてください。</string>
+    <string name="gotoSignUp">サインアップ</string>
+
+    <string name="register_hint_username">ユーザー名</string>
+    <string name="register_hint_email">Eメール</string>
+    <string name="register_hint_password1">パスワード</string>
+    <string name="register_hint_password2">パスワードを認証する</string>
+    <string name="gotoSignIn">サインイン</string>
+    <string name="addProfileTxt">*プロフィール写真を追加</string>
+
+    <string name="postDetail_downloadImg">画像をダウンロード</string>
+    <string name="postDetail_hint_comment">コメントを追加...</string>
+
+    <string name="signOutBtn">サインアウト</string>
+
+    <string name="aboutDesc">本アプリケーションは、ファンが作成した非公式アプリで、収益を創出しません。 すべての著作権及び商標は、当該所有者にあります。 オープンチャットやコメント欄に不適切な内容を残さないでください。 不適切な内容が含まれたコメントやオープンチャットの会話が見えた場合は、インスタグラムDM(@official_yola_studio)またはhelp.yola.studio@gmail.comを通じて申告してください。 IZ*ONE以外のアーティストは言及しないでください。 1つ、またはお互いに衝突を起こす可能性のある内容の会話内容とコメントは残さないでください。 不適切なコメント及びオープンチャットの会話内容は、予告なく削除されることがあります。 このルールを破ったり、それ以外の問題を誘発する場合、予告なくアカウントが無効になることがありますので、ご注意ください。</string>
+
+    <string name="signInGoogle">Googleでサインイン</string>
+    <string name="signInFacebook">Facebookでサインイン</string>
+    <string name="signInEmail">E-メールでサインイン</string>
+
+    <string name="nextBtn">次</string>
+    <string name="backBtn">バック</string>
+    <string name="continueBtn">はじめに</string>
+
+    <string name="serverMaintenanceTitle">サーバー点検中です</string>
+    <string name="serverMaintenanceDesc">サーバーは現在メンテナンス中です。後でもう一度やり直してください。</string>
+    <string name="serverMaintenanceRefresh">リロード</string>
+    <string name="serverMaintenanceQuit">アプリを閉じる</string>
+
+    <string name="dialog_delete_comment_title">コメントを削除しますか？</string>
+    <string name="dialog_delete_comment_delete">削除</string>
+    <string name="dialog_delete_comment_cancel">キャンセル</string>
+
+    <string name="dialog_signout_title">サインアウト？</string>
+    <string name="dialog_signout_signout">はい</string>
+    <string name="dialog_signout_cancel">キャンセル</string>
+
+    <string name="galleryiz">GALLERY*IZ</string>
+    <string name="groupphoto">Group Photo</string>
+    <string name="eunbi">Eunbi</string>
+    <string name="sakura">Sakura</string>
+    <string name="hyewon">Hyewon</string>
+    <string name="yena">Yena</string>
+    <string name="chaeyeon">Chaeyeon</string>
+    <string name="chaewon">Chaewon</string>
+    <string name="minju">Minju</string>
+    <string name="nako">Nako</string>
+    <string name="hitomi">Hitomi</string>
+    <string name="yuri">Yuri</string>
+    <string name="yujin">Yujin</string>
+    <string name="wonyoung">Wonyoung</string>
+
+    <string name="serverDownMsg">トラフィック量が多いため、サーバが一時的にシャットダウンしました。 Yola  Studioでは、この問題の解決に取り組んでいます。</string>
+    <string name="openchatDownMsg">オープンチャットは管理者によって一時的にシャットダウンされました。 後でもう一度試してください。</string>
+    <string name="joinOCServerDownMsg">❤️안고독한 아이즈원❤️ カカオトークオープンチャットを通じて写真と情報をご覧いただけます。</string>
+
+    <string name="openChatTitle">オープンチャット</string>
+    <string name="wallpaper_toolbar_title">高解像度の壁紙</string>
+
+    <string name="joinOpenChatTxt">カカオトークオープンチャットに参加する</string>
+    <string name="closeOpenChatDialogTxt">閉じる</string>
+    <string name="openChatDesc">IZ*ONEギャラリーズのカカオトークオープンチャットが作られました。 より一層円滑な疎通のために多くの参加をお願いいたします。</string>
+
+    <string name="settingsTitle">設定</string>
+    <string name="languagePrefTitle">言語設定</string>
+    <string name="signOutTitle">ログアウト</string>
+    <string name="checkUpdateTitle">アップデートがあるかどうかを確認します</string>
+    <string name="currentVersion">現在のバージョン </string>
+    <string name="latestVersion">最新バージョンを使用中です。</string>
+    <string name="iauTitle">バージョン情報</string>
+    <string name="privacyPolicyTitle">個人情報処理方針</string>
+
+    <string name="caughtUpTitle">あなたは新しいコンテンツを全て確認しました。</string>
+    <string name="caughtUpDesc">あなたは、ギャラリーに新しく上がってきた12の掲示物を全て確認しました。</string>
+    <string name="caughtUpSeeOldPosts">以前の掲示物を見る</string>
+
+    <string name="topRecConTitle">今日</string>
+    <string name="recommendConTitle">推薦掲示物</string>
+    <string name="vidConTitle">オススメ動画</string>
+    <string name="postConTitle">最新の掲示物</string>
+
+    <string name="discoverTBTitle">ディスカバー</string>
+    <string name="profileToolbarTitle">プロフィール</string>
+</resources>

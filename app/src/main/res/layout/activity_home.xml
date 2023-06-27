@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="47.5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:labelVisibilityMode="unlabeled"
+        android:background="?attr/WhiteToBlack"
+        app:menu="@menu/activity_main_drawer"
+        app:itemIconTint="@drawable/bottom_nav_icon_color_selector"
+        app:itemTextColor="@drawable/bottom_nav_icon_color_selector"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/WhiteToBlack">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/WhiteToBlack"
+            android:id="@+id/topToolbar"
+            android:visibility="gone">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="?attr/WhiteToBlack"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:contentInsetLeft="0dp"
+                android:contentInsetStart="0dp"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                android:contentInsetRight="0dp"
+                android:contentInsetEnd="0dp"
+                app:contentInsetRight="0dp"
+                app:contentInsetEnd="0dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="3dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/toolbar_img"
+                    android:scaleType="fitCenter"/>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/homeSwipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/mainActivityNestedScroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never">
+
+                <LinearLayout
+                    android:descendantFocusability="blocksDescendants"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/topRecCons"
+                        android:visibility="visible"
+                        android:background="?attr/WhiteToBlack"
+                        android:layout_marginBottom="10dp">
+
+                        <ImageView
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:id="@+id/topRecPostImg"
+                            android:layout_width="match_parent"
+                            android:layout_height="1.75in"
+                            android:scaleType="centerCrop"
+                            android:adjustViewBounds="true"
+                            android:background="?attr/WhiteToBlack"
+                            android:transitionName="explore_search_img_transition"/>
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintGuide_percent="0.7"
+                            android:id="@+id/guideline5"/>
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.75"
+                            android:id="@+id/guideline6"/>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/topRecIcon"
+                            android:background="@drawable/gradient2"/>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="#10000000"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toTopOf="@id/topRecPostDesc"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="10dp"
+                            android:id="@+id/topRecIcon">
+                            <ImageView
+                                android:layout_width="32.5dp"
+                                android:layout_height="32.5dp"
+                                android:src="@drawable/app_icon"/>
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/White"
+                            android:textStyle="bold"
+                            android:id="@+id/topRecPostDesc"
+                            android:maxLines="2"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/nanumbarungothicbold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toLeftOf="@id/guideline6"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="10dp"/>
+
+                        <TextView
+                            android:id="@+id/todaysTitleTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Today"
+                            android:textSize="20dp"
+                            android:textColor="@color/White"
+                            android:textStyle="bold"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/userProfileImg"
+                            android:layout_marginLeft="10dp"/>
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/userProfileImg"
+                            android:layout_width="33dp"
+                            android:layout_height="33dp"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginRight="10dp"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/recommendCons1"
+                        android:visibility="gone"
+                        android:background="?attr/WhiteToBlack"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="15dp">
+
+                        <TextView
+                            android:id="@+id/recommendationTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="@string/recommendConTitle"
+                            android:textColor="?attr/BlackToWhite"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="3dp"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recommendationRV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            app:layout_constraintTop_toBottomOf="@id/recommendationTitle" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <ImageView
+                        android:id="@+id/topADPanelImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:visibility="gone"
+                        android:layout_marginBottom="15dp"/>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/youtubeCons1"
+                        android:visibility="gone"
+                        android:background="?attr/WhiteToBlack"
+                        android:layout_marginBottom="15dp">
+
+                        <TextView
+                            android:id="@+id/videoHomeTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Recommended Videos"
+                            android:textColor="?BlackToWhite"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="3dp"/>
+
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/vidViewPager"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:clipToPadding="false"
+                            android:foregroundGravity="center"
+                            android:overScrollMode="never"
+                            android:layout_marginTop="3dp"
+                            app:layout_constraintTop_toBottomOf="@id/videoHomeTitle"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/postCons1"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/latestContentsTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textColor="?attr/BlackToWhite"
+                            android:text="@string/postConTitle"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="3dp"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/postRV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/WhiteToBlack"
+                            android:overScrollMode="never"
+                            android:scrollbars="none"
+                            android:layout_marginTop="2dp"
+                            app:layout_constraintTop_toBottomOf="@id/latestContentsTitle"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/caughtUpCons1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/WhiteToBlack"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/postNcaughtUpDivider"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:adjustViewBounds="true"
+                            android:layout_marginTop="1dp"
+                            android:background="?attr/WhiteSmokeToDarkGrey"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+                        <ImageView
+                            android:id="@+id/checkImg"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/ic_done"
+                            app:tint="@color/MyOpenChatColor"
+                            android:layout_marginTop="10dp"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/postNcaughtUpDivider"/>
+
+                        <TextView
+                            android:id="@+id/allCaughtUpTitleTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="You're All Caught"
+                            android:textSize="22dp"
+                            android:textColor="?attr/BlackToWhite"
+                            android:textAlignment="center"
+                            app:layout_constraintTop_toBottomOf="@id/checkImg"/>
+
+                        <TextView
+                            android:id="@+id/allCaughtUpDescTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="You've seen 24 new posts from the Gallery*IZ"
+                            android:textAlignment="center"
+                            android:textColor="@color/Grey"
+                            android:textSize="12dp"
+                            android:lineSpacingExtra="8dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            app:layout_constraintTop_toBottomOf="@id/allCaughtUpTitleTxt"/>
+
+                        <TextView
+                            android:id="@+id/seePrevPostsBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="View Older Posts"
+                            android:textColor="@color/White"
+                            android:textAlignment="center"
+                            android:layout_marginRight="45dp"
+                            android:layout_marginLeft="45dp"
+                            android:background="@drawable/bg8"
+                            android:padding="5dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="70dp"
+                            app:layout_constraintTop_toBottomOf="@id/allCaughtUpDescTxt"
+                            app:layout_constraintBottom_toBottomOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <ProgressBar
+            android:id="@+id/progressbar_home"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:indeterminateTint="@color/MyOpenChatColor"
+            android:layout_gravity="center"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/WhiteToBlack"
+        android:id="@+id/cons6"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/fHome_server_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="?attr/BlackToWhite"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/bg5">
+            <TextView
+                android:id="@+id/fHome_join_kakao_oc_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/DarkGreyToLightGrey"
+                android:textAlignment="center"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="25dp"
+                app:layout_constraintBottom_toTopOf="@id/fHome_join_kakao_oc_btn"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:id="@+id/fHome_join_kakao_oc_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:background="@drawable/button7bg"
+                android:textStyle="bold"
+                android:layout_marginBottom="25dp"
+                android:padding="13dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/WhiteToBlack"
+        android:id="@+id/noInternetFHome"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/no_internet"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:tint="?attr/DarkGreyToLightGrey" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

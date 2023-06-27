@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.WallpaperActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="47.5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:labelVisibilityMode="unlabeled"
+        android:background="?attr/WhiteToBlack"
+        app:menu="@menu/activity_main_drawer"
+        app:itemIconTint="@drawable/bottom_nav_icon_color_selector"
+        app:itemTextColor="@drawable/bottom_nav_icon_color_selector"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/WhiteToBlack"
+            android:id="@+id/wallpaperToolbar">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="?attr/WhiteToBlack"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:contentInsetLeft="0dp"
+                android:contentInsetStart="0dp"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                android:contentInsetRight="0dp"
+                android:contentInsetEnd="0dp"
+                app:contentInsetRight="0dp"
+                app:contentInsetEnd="0dp"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/toolbarWallpaperTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="High Res Wallpapers"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_margin="12.5dp"
+                        android:textSize="18dp"
+                        android:textColor="?attr/BlackToWhite"
+                        android:textStyle="bold"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/con2"
+                android:background="@color/White">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/WhiteToBlack"
+                    android:scrollbars="none"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="1dp"
+                        android:background="?attr/WhiteToBlack">
+
+                        <TextView
+                            android:id="@+id/galleryizw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:textSize="14dp"
+                            android:textStyle="normal"
+                            android:layout_margin="2dp"
+                            android:textColor="?attr/BlackToWhite"
+                            android:text="GALLERY*IZ"
+                            android:background="@drawable/bg4"/>
+
+                        <TextView
+                            android:id="@+id/group_photow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:textSize="14dp"
+                            android:textStyle="normal"
+                            android:layout_margin="2dp"
+                            android:textColor="?attr/BlackToWhite"
+                            android:text="Group Photo"
+                            android:background="@drawable/bg4" />
+
+                        <TextView
+                            android:id="@+id/eunbiw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:textSize="14dp"
+                            android:textStyle="normal"
+                            android:layout_margin="2dp"
+                            android:textColor="?attr/BlackToWhite"
+                            android:text="Eunbi"
+                            android:background="@drawable/bg4"/>
+
+                        <TextView
+                            android:id="@+id/sakuraw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:textSize="14dp"
+                            android:textStyle="normal"
+                            android:layout_margin="2dp"
+                            android:textColor="?attr/BlackToWhite"
+                            android:text="Sakura"
+                            android:background="@drawable/bg4"/>
+
+                        <TextView
+                            android:id="@+id/hyewonw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:textSize="14dp"
+                            android:textStyle="normal"
+                            android:layout_margin="2dp"
+                            android:textColor="?attr/BlackToWhite"
+                            android:text="Hyewon"
+                            android:background="@drawable/bg4"/>
+
+                        <TextView
+                            android:id="@+id/yenaw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:textSize="14dp"
+                            android:textStyle="normal"
+                            android:layout_margin="2dp"
+                            android:textColor="?attr/BlackToWhite"
+                            android:text="Yena"
+                            android:background="@drawable/bg4"/>
+
+                        <TextView
+                            android:id="@+id/chaeyeonw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:textSize="14dp"
+                            android:textStyle="normal"
+                            android:layout_margin="2dp"
+                            android:textColor="?attr/BlackToWhite"
+                            android:text="Chaeyeon"
+                            android:background="@drawable/bg4"/>
+
+                        <TextView
+                            android:id="@+id/chaewonw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:textSize="14dp"
+                            android:textStyle="normal"
+                            android:layout_margin="2dp"
+                            android:textColor="?attr/BlackToWhite"
+                            android:text="Chaewon"
+                            android:background="@drawable/bg4"/>
+
+                        <TextView
+                            android:id="@+id/minjuw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:textSize="14dp"
+                            android:textStyle="normal"
+                            android:layout_margin="2dp"
+                            android:textColor="?attr/BlackToWhite"
+                            android:text="Minju"
+                            android:background="@drawable/bg4"/>
+
+                        <TextView
+                            android:id="@+id/nakow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:textSize="14dp"
+                            android:textStyle="normal"
+                            android:layout_margin="2dp"
+                            android:textColor="?attr/BlackToWhite"
+                            android:text="Nako"
+                            android:background="@drawable/bg4"/>
+
+                        <TextView
+                            android:id="@+id/hitomiw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:textSize="14dp"
+                            android:textStyle="normal"
+                            android:layout_margin="2dp"
+                            android:textColor="?attr/BlackToWhite"
+                            android:text="Hitomi"
+                            android:background="@drawable/bg4"/>
+
+                        <TextView
+                            android:id="@+id/yuriw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:textSize="14dp"
+                            android:textStyle="normal"
+                            android:layout_margin="2dp"
+                            android:textColor="?attr/BlackToWhite"
+                            android:text="Yuri"
+                            android:background="@drawable/bg4"/>
+
+                        <TextView
+                            android:id="@+id/yujinw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:textSize="14dp"
+                            android:textStyle="normal"
+                            android:layout_margin="2dp"
+                            android:textColor="?attr/BlackToWhite"
+                            android:text="Yujin"
+                            android:background="@drawable/bg4"/>
+
+                        <TextView
+                            android:id="@+id/wonyoungw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:textSize="14dp"
+                            android:textStyle="normal"
+                            android:layout_margin="2dp"
+                            android:textColor="?attr/BlackToWhite"
+                            android:text="Wonyoung"
+                            android:background="@drawable/bg4"/>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/rv_wallpaper"
+                android:clipToPadding="false"
+                android:scrollbars="none"
+                android:background="?attr/WhiteToBlack"
+                app:layout_constraintTop_toBottomOf="@id/con2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="47.5dp"/>
+
+            <ProgressBar
+                android:id="@+id/progressbar_wallpaper"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="7.5dp"
+                android:indeterminateTint="@color/MyOpenChatColor"
+                app:layout_constraintTop_toTopOf="@id/rv_wallpaper"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/WhiteToBlack"
+            android:id="@+id/cons12"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/fWallpaper_server_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="?attr/BlackToWhite"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

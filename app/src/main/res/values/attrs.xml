@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ds">
+        <attr name="WhiteToBlack" format="color"/>
+        <attr name="BlackToWhite" format="color"/>
+        <attr name="WhiteSmokeToDarkGrey" format="color"/>
+        <attr name="LightGreyToDarkGrey" format="color"/>
+        <attr name="DarkGreyToLightGrey" format="color"/>
+        <attr name="CommentLightToDarkMode" format="color"/>
+        <attr name="OtherOpenChatColor" format="color"/>
+    </declare-styleable>
+</resources>

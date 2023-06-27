@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">아이즈원 갤러리즈</string>
+    <string name="toolbar_app_name">아이즈원 갤러리즈</string>
+
+    <string name="sign_in">로그인 하기</string>
+    <string name="sign_up">계정 만들기</string>
+    <string name="intro_desc">주기적으로 업데이트되는 최신 아이즈원 사진을 살펴보세요!</string>
+
+    <string name="email_verification_title">이메일 인증</string>
+    <string name="email_verification_desc">이메일 인증 링크 이메일 주소:</string>
+    <string name="signinwithdifferentaccount_btn">다른 계정으로 로그인</string>
+    <string name="verifyEmailBtn">이메일 인증</string>
+
+    <string name="error_title">문제 발생</string>
+    <string name="error_desc1">예상치 못한 오류가 발생했습니다.</string>
+    <string name="error_desc2">잠시후 다시 시도해 주십시오.</string>
+
+    <string name="login_hint_email">이메일</string>
+    <string name="login_hint_password">비밀번호</string>
+    <string name="login_title">로그인</string>
+    <string name="login_desc">계속하려면 로그인하세요.</string>
+    <string name="gotoSignUp">계정 만들기</string>
+
+    <string name="register_hint_username">사용자 이름</string>
+    <string name="register_hint_email">이메일</string>
+    <string name="register_hint_password1">비밀번호</string>
+    <string name="register_hint_password2">비밀번호 확인</string>
+    <string name="gotoSignIn">로그인</string>
+    <string name="addProfileTxt">*프로필 사진 추가</string>
+
+    <string name="postDetail_downloadImg">이미지 다운로드</string>
+    <string name="postDetail_hint_comment">공개 댓글 추가...</string>
+
+    <string name="signOutBtn">로그아웃</string>
+
+    <string name="aboutDesc">본 애플리케이션은 팬이 만든 비공식 앱이고 수익 창출을 하지 않습니다. 모든 저작권 및 상표는 해당 소유자에게 있습니다. 오픈 채팅 및 댓글난에 부적절한 내용을 남기지 마시고 유의하시기 바랍니다. 부적절한 내용이 담긴 댓글 및 오픈 채팅 대화가 보이면 인스타그램 DM(@official_yola_studio)이나 help.yola.studio@gmail.com을 통해 신고해 주세요. 아이즈원 이외의 아티스트는 언급하지 말아 주세요. 하나 및 서로 충돌을 일으킬 수 있는 내용이 담긴 대화 내용과 댓글은 남기지 말아 주세요. 부적절한 댓글 및 오픈 채팅 대화 내용은 예고 없이 삭제될 수 있습니다. 해당 규칙을 어기거나 그 이외 문제를 유발하는 경우 예고 없이 계정이 비활성화될 수 있으니 조심해주세요.</string>
+
+    <string name="signInGoogle">Google 계정으로 로그인</string>
+    <string name="signInFacebook">Facebook 계정으로 로그인</string>
+    <string name="signInEmail">이메일로 로그인</string>
+
+    <string name="nextBtn">계속</string>
+    <string name="backBtn">뒤로가기</string>
+    <string name="continueBtn">시작하기</string>
+
+    <string name="serverMaintenanceTitle">서버 점검 안내</string>
+    <string name="serverMaintenanceDesc">작업 시간 동안 애플리케이션 서비스가 제한 됩니다. 불편하시겠지만 많은 양해 부탁드리며 빠른 시간 내에 정상 서비스가 가능하도록 노력하겠습니다. 감사합니다.</string>
+    <string name="serverMaintenanceRefresh">새로고침</string>
+    <string name="serverMaintenanceQuit">앱 닫기</string>
+
+    <string name="dialog_delete_comment_title">댓글을 삭제하시겠습니까?</string>
+    <string name="dialog_delete_comment_delete">삭제</string>
+    <string name="dialog_delete_comment_cancel">취소</string>
+
+    <string name="dialog_signout_title">로그아웃 하시겠습니까?</string>
+    <string name="dialog_signout_signout">로그아웃</string>
+    <string name="dialog_signout_cancel">취소</string>
+
+    <string name="galleryiz">갤러리즈</string>
+    <string name="groupphoto">단체사진</string>
+    <string name="eunbi">은비</string>
+    <string name="sakura">사쿠라</string>
+    <string name="hyewon">혜원</string>
+    <string name="yena">예나</string>
+    <string name="chaeyeon">채연</string>
+    <string name="chaewon">채원</string>
+    <string name="minju">민주</string>
+    <string name="nako">나코</string>
+    <string name="hitomi">히토미</string>
+    <string name="yuri">유리</string>
+    <string name="yujin">유진</string>
+    <string name="wonyoung">원영</string>
+
+    <string name="serverDownMsg">허용 데이터베이스 사용량 초과로 인해 서버가 일시적으로 종료되었습니다. 나중에 다시 시도해 주시기 바랍니다.</string>
+    <string name="openchatDownMsg">관리자에 의해 오픈 채팅이 일시적으로 중단되었습니다. 나중에 다시 시도해 주시기 바랍니다.</string>
+    <string name="joinOCServerDownMsg">❤️안고독한 아이즈원❤️ 카카오톡 오픈채팅을 통해 최신 아이즈원 사진 및 정보를 얻을 수 있습니다.</string>
+
+    <string name="openChatTitle">갤러리즈 오픈채팅</string>
+    <string name="wallpaper_toolbar_title">고화질 배경화면</string>
+
+    <string name="joinOpenChatTxt">오픈채팅 참여하기</string>
+    <string name="closeOpenChatDialogTxt">닫기</string>
+    <string name="openChatDesc">아이즈원 갤러리즈 카카오톡 오픈채팅이 만들어졌습니다. 더욱더 원활한 소통을 위해 많은 참여 부탁드립니다.</string>
+
+    <string name="settingsTitle">설정</string>
+    <string name="languagePrefTitle">언어 설정</string>
+    <string name="signOutTitle">로그아웃</string>
+    <string name="checkUpdateTitle">버전정보</string>
+    <string name="currentVersion">현재 버전</string>
+    <string name="latestVersion">최신 버전을 사용 중입니다</string>
+    <string name="iauTitle">버전정보</string>
+    <string name="privacyPolicyTitle">개인정보처리방침</string>
+
+    <string name="caughtUpTitle">새 콘텐츠를 모두 확인했습니다</string>
+    <string name="caughtUpDesc">갤러리즈에 새롭게 올라온 12개의 게시물을 모두 확인했습니다.</string>
+    <string name="caughtUpSeeOldPosts">이전 게시물 보기</string>
+
+    <string name="topRecConTitle">#투데이</string>
+    <string name="recommendConTitle">#추천게시물</string>
+    <string name="vidConTitle">#실시간_추천영상</string>
+    <string name="postConTitle">#최신게시물</string>
+
+    <string name="discoverTBTitle">디스커버</string>
+    <string name="profileToolbarTitle">프로필</string>
+</resources>

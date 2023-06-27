@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ExploreActivity"
+    android:background="?attr/WhiteSmokeToDarkGrey">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="47.5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:labelVisibilityMode="unlabeled"
+        android:background="?attr/WhiteToBlack"
+        app:menu="@menu/activity_main_drawer"
+        app:itemIconTint="@drawable/bottom_nav_icon_color_selector"
+        app:itemTextColor="@drawable/bottom_nav_icon_color_selector"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/WhiteToBlack"
+            android:id="@+id/topToolbar">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/search_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:contentInsetLeft="0dp"
+                android:contentInsetStart="0dp"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                android:contentInsetRight="0dp"
+                android:contentInsetEnd="0dp"
+                app:contentInsetRight="0dp"
+                app:contentInsetEnd="0dp"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/toolbarDiscoverTitleTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Discover"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_margin="12.5dp"
+                        android:textSize="18dp"
+                        android:textColor="?attr/BlackToWhite"
+                        android:textStyle="bold"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/con1"
+                android:background="@color/White">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/WhiteToBlack"
+                    android:scrollbars="none"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="1dp"
+                        android:background="?attr/WhiteToBlack">
+
+                        <TextView
+                            android:id="@+id/galleryiz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:textSize="14dp"
+                            android:textStyle="normal"
+                            android:layout_margin="2dp"
+                            android:textColor="?attr/BlackToWhite"
+                            android:text="GALLERY*IZ"
+                            android:background="@drawable/bg4"/>
+
+                        <TextView
+                            android:id="@+id/group_photo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:textSize="14dp"
+                            android:textStyle="normal"
+                            android:layout_margin="2dp"
+                            android:textColor="?attr/BlackToWhite"
+                            android:text="Group Photo"
+                            android:background="@drawable/bg4" />
+
+                        <TextView
+                            android:id="@+id/eunbi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:textSize="14dp"
+                            android:textStyle="normal"
+                            android:layout_margin="2dp"
+                            android:textColor="?attr/BlackToWhite"
+                            android:text="Eunbi"
+                            android:background="@drawable/bg4"/>
+
+                        <TextView
+                            android:id="@+id/sakura"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:textSize="14dp"
+                            android:textStyle="normal"
+                            android:layout_margin="2dp"
+                            android:textColor="?attr/BlackToWhite"
+                            android:text="Sakura"
+                            android:background="@drawable/bg4"/>
+
+                        <TextView
+                            android:id="@+id/hyewon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:textSize="14dp"
+                            android:textStyle="normal"
+                            android:layout_margin="2dp"
+                            android:textColor="?attr/BlackToWhite"
+                            android:text="Hyewon"
+                            android:background="@drawable/bg4"/>
+
+                        <TextView
+                            android:id="@+id/yena"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:textSize="14dp"
+                            android:textStyle="normal"
+                            android:layout_margin="2dp"
+                            android:textColor="?attr/BlackToWhite"
+                            android:text="Yena"
+                            android:background="@drawable/bg4"/>
+
+                        <TextView
+                            android:id="@+id/chaeyeon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:textSize="14dp"
+                            android:textStyle="normal"
+                            android:layout_margin="2dp"
+                            android:textColor="?attr/BlackToWhite"
+                            android:text="Chaeyeon"
+                            android:background="@drawable/bg4"/>
+
+                        <TextView
+                            android:id="@+id/chaewon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:textSize="14dp"
+                            android:textStyle="normal"
+                            android:layout_margin="2dp"
+                            android:textColor="?attr/BlackToWhite"
+                            android:text="Chaewon"
+                            android:background="@drawable/bg4"/>
+
+                        <TextView
+                            android:id="@+id/minju"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:textSize="14dp"
+                            android:textStyle="normal"
+                            android:layout_margin="2dp"
+                            android:textColor="?attr/BlackToWhite"
+                            android:text="Minju"
+                            android:background="@drawable/bg4"/>
+
+                        <TextView
+                            android:id="@+id/nako"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:textSize="14dp"
+                            android:textStyle="normal"
+                            android:layout_margin="2dp"
+                            android:textColor="?attr/BlackToWhite"
+                            android:text="Nako"
+                            android:background="@drawable/bg4"/>
+
+                        <TextView
+                            android:id="@+id/hitomi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:textSize="14dp"
+                            android:textStyle="normal"
+                            android:layout_margin="2dp"
+                            android:textColor="?attr/BlackToWhite"
+                            android:text="Hitomi"
+                            android:background="@drawable/bg4"/>
+
+                        <TextView
+                            android:id="@+id/yuri"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:textSize="14dp"
+                            android:textStyle="normal"
+                            android:layout_margin="2dp"
+                            android:textColor="?attr/BlackToWhite"
+                            android:text="Yuri"
+                            android:background="@drawable/bg4"/>
+
+                        <TextView
+                            android:id="@+id/yujin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:textSize="14dp"
+                            android:textStyle="normal"
+                            android:layout_margin="2dp"
+                            android:textColor="?attr/BlackToWhite"
+                            android:text="Yujin"
+                            android:background="@drawable/bg4"/>
+
+                        <TextView
+                            android:id="@+id/wonyoung"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:textSize="14dp"
+                            android:textStyle="normal"
+                            android:layout_margin="2dp"
+                            android:textColor="?attr/BlackToWhite"
+                            android:text="Wonyoung"
+                            android:background="@drawable/bg4"/>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/searchRV"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toBottomOf="@id/con1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="47.5dp"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                android:background="?attr/WhiteToBlack"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="?attr/WhiteToBlack"
+                app:layout_constraintTop_toBottomOf="@id/con1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/cons7"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/fExplore_server_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="130dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textColor="?attr/BlackToWhite"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:background="@drawable/bg5">
+                    <TextView
+                        android:id="@+id/fExplore_join_kakao_oc_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/DarkGreyToLightGrey"
+                        android:textAlignment="center"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginBottom="25dp"
+                        app:layout_constraintBottom_toTopOf="@id/fExplore_join_kakao_oc_btn"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="30dp"/>
+
+                    <TextView
+                        android:id="@+id/fExplore_join_kakao_oc_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/White"
+                        android:textAlignment="center"
+                        android:textSize="15dp"
+                        android:background="@drawable/button7bg"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="60dp"
+                        android:padding="13dp"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="?attr/WhiteToBlack"
+                app:layout_constraintTop_toBottomOf="@id/con1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/noInternetFExplore"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/no_internet"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:tint="?attr/DarkGreyToLightGrey" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ProgressBar
+            android:id="@+id/progressbar_explore"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="90dp"
+            android:indeterminateTint="@color/MyOpenChatColor"
+            android:layout_gravity="center|top" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

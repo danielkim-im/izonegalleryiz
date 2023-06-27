@@ -1,0 +1,27 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="WhiteToBlack">#fff</item>
+        <item name="BlackToWhite">#000</item>
+        <item name="WhiteSmokeToDarkGrey">#f4f4f4</item>
+        <item name="LightGreyToDarkGrey">#D3D3D3</item>
+        <item name="DarkGreyToLightGrey">#2d2d2d</item>
+        <item name="CommentLightToDarkMode">#f4f4f4</item>
+        <item name="OtherOpenChatColor">#f0f0f0</item>
+    </style>
+
+    <style name="darkTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/Black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="WhiteToBlack">#000</item>
+        <item name="BlackToWhite">#fff</item>
+        <item name="WhiteSmokeToDarkGrey">#2d2d2d</item>
+        <item name="LightGreyToDarkGrey">#2d2d2d</item>
+        <item name="DarkGreyToLightGrey">#D3D3D3</item>
+        <item name="CommentLightToDarkMode">#2d2d2d</item>
+        <item name="OtherOpenChatColor">#2e2e2e</item>
+    </style>
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IZ*ONE Gallery*IZ</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="action_settings" translatable="false">Settings</string>
+
+    <string name="bot_home" translatable="false">Home</string>
+    <string name="bot_explore" translatable="false">Discover</string>
+    <string name="bot_openchat" translatable="false">Open Chat</string>
+    <string name="bot_video" translatable="false">Video</string>
+    <string name="bot_wallpaper" translatable="false">Wallpaper</string>
+    <string name="bot_profile" translatable="false">Profile</string>
+    <string name="bot_more" translatable="false">More</string>
+    <string name="bot_hashtag" translatable="false">Hashtag</string>
+    <string name="bot_about" translatable="false">About</string>
+    <string name="toolbar_app_name">IZ*ONE Gallery*IZ</string>
+
+    <string name="facebook_app_id" translatable="false">3924070737637209</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb3924070737637209</string>
+
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="intro_desc">Explore the latest IZ*ONE photos that are updated periodically!</string>
+
+    <string name="email_verification_title">Verify Email</string>
+    <string name="email_verification_desc">Email Verification Link Sent To:</string>
+    <string name="signinwithdifferentaccount_btn">Sign In with different account</string>
+    <string name="verifyEmailBtn">VERIFY</string>
+
+    <string name="error_title">Oops!</string>
+    <string name="error_desc1">Something went wrong</string>
+    <string name="error_desc2">Please try again later.</string>
+
+    <string name="login_hint_email">Email</string>
+    <string name="login_hint_password">Password</string>
+    <string name="login_title">SIGN IN</string>
+    <string name="login_desc">Please sign in to continue.</string>
+    <string name="gotoSignUp">Sign Up</string>
+
+    <string name="register_hint_username">Username</string>
+    <string name="register_hint_email">Email</string>
+    <string name="register_hint_password1">Password</string>
+    <string name="register_hint_password2">Confirm Password</string>
+    <string name="gotoSignIn">Sign In</string>
+    <string name="addProfileTxt">*Add Profile Picture</string>
+
+    <string name="postDetail_downloadImg">DOWNLOAD IMAGE</string>
+    <string name="postDetail_hint_comment">Add a comment...</string>
+
+    <string name="signOutBtn">SIGN OUT</string>
+
+    <string name="aboutDesc">This application is an informal app created by a fan and does not generate revenue. All copyrights and trademarks belong to their respective owners. Please do not leave inappropriate content in the open chat and comment section. If you see inappropriate comments and open chat conversations, please report them via Instagram DM (@official_yola_studio) or help.yola.studio@gmail.com. Please do not mention artists other than IZ*ONE. Please do not leave comments and chat details that may cause a conflict between the two. Inappropriate comments and open chat conversations can be deleted without notice. Please be careful because if you violate the rules or cause other problems, your account may be deactivated without notice.</string>
+
+    <string name="signInGoogle">Sign in with Google</string>
+    <string name="signInFacebook">Sign in with Facebook</string>
+    <string name="signInEmail">Sign in with Email</string>
+
+    <string name="nextBtn">Next</string>
+    <string name="backBtn">Back</string>
+    <string name="continueBtn">Get Started</string>
+
+    <string name="serverMaintenanceTitle">SERVER MAINTENANCE</string>
+    <string name="serverMaintenanceDesc">We\'re sorry, the servers are currently under maintenance. Please try again later.</string>
+    <string name="serverMaintenanceRefresh">Refresh</string>
+    <string name="serverMaintenanceQuit">Quit Application</string>
+
+    <string name="dialog_delete_comment_title">Delete Comment?</string>
+    <string name="dialog_delete_comment_delete">Delete</string>
+    <string name="dialog_delete_comment_cancel">Cancel</string>
+
+    <string name="dialog_signout_title">Sign Out?</string>
+    <string name="dialog_signout_signout">Yes</string>
+    <string name="dialog_signout_cancel">Cancel</string>
+
+    <string name="galleryiz">GALLERY*IZ</string>
+    <string name="groupphoto">Group Photo</string>
+    <string name="eunbi">Eunbi</string>
+    <string name="sakura">Sakura</string>
+    <string name="hyewon">Hyewon</string>
+    <string name="yena">Yena</string>
+    <string name="chaeyeon">Chaeyeon</string>
+    <string name="chaewon">Chaewon</string>
+    <string name="minju">Minju</string>
+    <string name="nako">Nako</string>
+    <string name="hitomi">Hitomi</string>
+    <string name="yuri">Yuri</string>
+    <string name="yujin">Yujin</string>
+    <string name="wonyoung">Wonyoung</string>
+
+    <string name="serverDownMsg">Due to high traffic volumes, the server has temporarily shut down. Yola Studio is working on resolving this issue.</string>
+    <string name="openchatDownMsg">Open Chat has been temporarily shut down by the administrator. Please try again later.</string>
+    <string name="joinOCServerDownMsg">Get photos and informations through ❤️안고독한 아이즈원❤️ KakaoTalk Open Chat</string>
+
+    <string name="openChatTitle">Open Chat</string>
+    <string name="wallpaper_toolbar_title">High Res Wallpapers</string>
+
+    <string name="joinOpenChatTxt">Join KakaoTalk Open Chat</string>
+    <string name="closeOpenChatDialogTxt">Close</string>
+    <string name="openChatDesc">IZ*ONE Gallery*IZ KakaoTalk Open Chat has been created.</string>
+
+    <string name="settingsTitle">Settings</string>
+    <string name="languagePrefTitle">Language Preference</string>
+    <string name="signOutTitle">Sign Out</string>
+    <string name="checkUpdateTitle">Check for Updates</string>
+    <string name="currentVersion">Current Version</string>
+    <string name="latestVersion">Using latest version</string>
+    <string name="iauTitle">Version Information</string>
+    <string name="privacyPolicyTitle">Privacy Policy</string>
+
+    <string name="caughtUpTitle">You\'re All Caught Up</string>
+    <string name="caughtUpDesc">You\'ve seen 12 new posts from the Gallery*IZ</string>
+    <string name="caughtUpSeeOldPosts">View Older Posts</string>
+
+    <string name="topRecConTitle">Today</string>
+    <string name="recommendConTitle">Recommended Posts</string>
+    <string name="vidConTitle">Recommended Videos</string>
+    <string name="postConTitle">Latest Posts</string>
+
+    <string name="discoverTBTitle">Discover</string>
+    <string name="profileToolbarTitle">Profile</string>
+</resources>

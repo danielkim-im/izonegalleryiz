@@ -1,0 +1,7 @@
+include ':YouTubeAndroidPlayerApi'
+include ':YouTubeAndroidPlayerApi'
+include ':YouTubeAndroidPlayerApi'
+include ':YouTubeAndroidPlayerApi'
+include ':YouTubeAndroidPlayerApi'
+include ':app'
+rootProject.name = "BILOG"

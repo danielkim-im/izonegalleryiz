@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.WallpaperDetailActivity"
+    android:background="@color/Black">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:id="@+id/wallpaperImgView"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/gradient2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:angle="90"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="@color/White"
+            android:id="@+id/wallpaperTitle"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginTop="75dp"
+            app:layout_constraintBottom_toTopOf="@id/wallpaperDesc"
+            app:layout_constraintLeft_toLeftOf="@id/wallpaperDesc"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="25dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="@color/White"
+            android:id="@+id/wallpaperDesc"
+            android:textSize="16dp"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:textColorLink="@color/MyOpenChatColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="35dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/downloadBtnWallpaper"
+        android:layout_width="42.5dp"
+        android:layout_height="42.5dp"
+        android:src="@drawable/ui_download"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="35dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/reg_button_style"
+        android:padding="8dp"
+        app:tint="@color/White" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

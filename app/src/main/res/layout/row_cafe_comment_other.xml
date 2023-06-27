@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@android:color/transparent"
+        android:id="@+id/cardview5"
+        app:cardCornerRadius="14dp">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/comment_user_img"
+            android:background="@android:color/transparent"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            app:srcCompat="@mipmap/ic_launcher"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:textColor="?attr/BlackToWhite"
+        android:id="@+id/comment_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:text="TextView"
+        android:textSize="11dp"
+        app:layout_constraintStart_toEndOf="@+id/cardview5"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:visibility="visible"
+        android:id="@+id/adminSignImageComment"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_verified_outline"
+        android:scaleType="fitStart"
+        app:layout_constraintTop_toTopOf="@id/comment_username"
+        app:layout_constraintBottom_toBottomOf="@id/comment_username"
+        app:layout_constraintLeft_toRightOf="@id/comment_username"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="3dp"
+        app:tint="@color/MyOpenChatColor" />
+
+    <TextView
+        android:id="@+id/comment_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="1dp"
+        android:text="Text Comment Goes Here"
+        android:textColor="?attr/BlackToWhite"
+        android:textAlignment="textStart"
+        android:textSize="16dp"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:textColorLink="@color/MyOpenChatColor"
+        android:padding="8dp"
+        android:maxEms="12"
+        android:background="@drawable/row_cafecomment_left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/cardview5"
+        app:layout_constraintTop_toBottomOf="@+id/comment_username" />
+
+
+    <TextView
+        android:id="@+id/comment_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="9dp"
+        android:layout_marginLeft="4dp"
+        android:text="10:20"
+        android:textColor="?attr/DarkGreyToLightGrey"
+        app:layout_constraintLeft_toRightOf="@+id/comment_content"
+        app:layout_constraintBottom_toBottomOf="@id/comment_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

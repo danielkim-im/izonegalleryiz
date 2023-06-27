@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ServerMaintenanceActivity">
+
+    <ImageView
+        android:id="@+id/serverImg"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:background="@drawable/ic_announcement"
+        android:backgroundTint="@color/LightGreen"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/titleTextview"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/titleTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/museomoderno_bold"
+        android:text="@string/serverMaintenanceTitle"
+        android:textAlignment="center"
+        android:textColor="@color/LightGreen"
+        android:textSize="22.5dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/serverImg" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/titleTextview"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:text="@string/serverMaintenanceDesc"
+        android:textColor="@color/Black"
+        android:textSize="17dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/museomoderno_regular"/>
+
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="- - - - -"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="15dp"
+        android:textColor="@color/Black"
+        android:textAlignment="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/descriptionTextView"
+        android:fontFamily="@font/museomoderno_regular" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/timeTextView"
+        app:layout_constraintBottom_toTopOf="@id/refreshBtn"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/developerMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="17.5dp"
+                android:textColor="@color/Black"/>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/refresh_progress_bar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/timeTextView"
+        app:layout_constraintBottom_toTopOf="@id/refreshBtn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:indeterminateTint="@color/LightGreen"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/refreshBtn"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintRight_toLeftOf="@id/quitBtn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="15dp"
+        android:background="@drawable/button4bg"
+        android:text="@string/serverMaintenanceRefresh"
+        android:textAllCaps="true"
+        android:textColor="@color/White"/>
+
+    <Button
+        android:id="@+id/quitBtn"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/refreshBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="15dp"
+        android:background="@drawable/button9bg"
+        android:text="@string/serverMaintenanceQuit"
+        android:textAllCaps="true"
+        android:textColor="@color/White"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

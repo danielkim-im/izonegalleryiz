@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.IntroActivity">
+
+    <ImageView
+        android:id="@+id/introImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/yena"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/gradient1"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/gradient2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:angle="90"/>
+
+    <TextView
+        android:id="@+id/textview9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IZ*ONE"
+        android:textSize="35dp"
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        android:fontFamily="@font/mories"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/title1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GALLERY*IZ"
+        android:textSize="45dp"
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        android:fontFamily="@font/mories"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/desc1"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/desc1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="13dp"
+        android:text="@string/intro_desc"
+        android:textColor="@color/White"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/signinGoogle"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/signinGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/bg2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/signinFacebook">
+
+        <ImageView
+            android:id="@+id/googleicon1"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/google_icon"
+            android:scaleType="fitCenter"
+            android:padding="13dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <TextView
+            android:id="@+id/signinGoogleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Sign in with Google"
+            android:gravity="center"
+            android:textColor="@color/DarkGrey"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:visibility="gone"
+        android:id="@+id/signinFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/bg2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/signinEmail">
+
+        <ImageView
+            android:id="@+id/facebookicon1"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_facebook_login"
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:tint="@color/MyOpenChatColor" />
+
+        <TextView
+            android:id="@+id/signinFacebookTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Sign in with Facebook"
+            android:gravity="center"
+            android:textColor="@color/DarkGrey"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/signinEmail"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/bg2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/emailicon1"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_mail_outline_24"
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:tint="@color/Black" />
+
+        <TextView
+            android:id="@+id/signinEmailTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Sign in with Email"
+            android:gravity="center"
+            android:textColor="@color/DarkGrey"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
