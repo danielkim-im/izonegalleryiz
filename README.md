@@ -1,7 +1,9 @@
 # IZONE GALLERY*IZ Android App
+
 IZONE GALLERY*IZ is an Android application designed for fans of the K-Pop group IZONE, offering a platform to explore and share the latest photos and content related to the group.
 
 ## Features
+
 - **Photo Exploration**: Users can browse a regularly updated collection of IZONE photos, ensuring access to the latest images of the group.
 - **User Authentication**: Secure login and account management are facilitated through Firebase Authentication.​
 - **Real-time Database**: Utilizes Firebase Realtime Database to store and synchronize user data and preferences.​
@@ -9,6 +11,7 @@ IZONE GALLERY*IZ is an Android application designed for fans of the K-Pop group 
 - **Push Notifications**: Keeps users informed about new content and updates via Firebase Cloud Messaging.
 
 ## Technologies Used
+
 - **Java**: The primary programming language for Android development in this project.
 - **Firebase Services**:
   - Authentication
@@ -17,9 +20,11 @@ IZONE GALLERY*IZ is an Android application designed for fans of the K-Pop group 
   - Cloud Messaging
  
 ## Achievements
+
 Over 15,000 K-Pop fans across 180+ countries have signed up for IZONE GALLERY*IZ.
 
 ## Getting Started
+
 To explore the application:
 1. **Clone the Repository**:
 
@@ -33,6 +38,11 @@ Navigate to the project directory and open it using Android Studio.
 Ensure all dependencies are resolved and run the application on an emulator or physical device.
 
 ## Contact
+
 For more information, visit the project's website.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 _Note: IZONE GALLERYIZ is an independent project and is not affiliated with the official IZONE group.*_
