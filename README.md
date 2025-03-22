@@ -33,6 +33,6 @@ Navigate to the project directory and open it using Android Studio.
 Ensure all dependencies are resolved and run the application on an emulator or physical device.
 
 ## Contact
-For more information, visit the project's website:
+For more information, visit the project's website.
 
 _Note: IZONE GALLERYIZ is an independent project and is not affiliated with the official IZONE group.*_
