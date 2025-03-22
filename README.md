@@ -22,12 +22,17 @@ Over 15,000 K-Pop fans across 180+ countries have signed up for IZONE GALLERY*IZ
 ## Getting Started
 To explore the application:
 1. **Clone the Repository**:
+
+    ```bash
+    git clone https://github.com/danielkim-im/izonegalleryiz.git
+    ```
+
 2. **Open in Android Studio**:
 Navigate to the project directory and open it using Android Studio.
 3. **Build and Run**:
 Ensure all dependencies are resolved and run the application on an emulator or physical device.
 
 ## Contact
-For more information, visit the porject's website:
+For more information, visit the project's website:
 
 _Note: IZONE GALLERYIZ is an independent project and is not affiliated with the official IZONE group.*_
