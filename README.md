@@ -2,6 +2,8 @@
 
 IZONE GALLERY*IZ is an Android application designed for fans of the K-Pop group IZONE, offering a platform to explore and share the latest photos and content related to the group.
 
+Legacy release available on [Google Play](https://play.google.com/store/apps/details?id=com.yolastudio.bilog)
+
 ## Features
 
 - **Photo Exploration**: Users can browse a regularly updated collection of IZONE photos, ensuring access to the latest images of the group.
