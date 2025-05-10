@@ -8,7 +8,7 @@ Legacy release available on [Google Play](https://play.google.com/store/apps/det
 
 - **Photo Exploration**: Users can browse a regularly updated collection of IZONE photos, ensuring access to the latest images of the group.
 - **User Authentication**: Secure login and account management are facilitated through Firebase Authentication.​
-- **Real-time Database**: Utilizes Firebase Realtime Database to store and synchronize user data and preferences.​
+- **Realtime Database**: Utilizes Firebase Realtime Database to manage post-related data—such as images, likes, and comments—and support live group chat functionality.
 - **Cloud Storage**: Leverages Firebase Cloud Storage for efficient management and delivery of media content.​
 - **Push Notifications**: Keeps users informed about new content and updates via Firebase Cloud Messaging.
 
