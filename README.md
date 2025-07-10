@@ -4,6 +4,8 @@ IZONE GALLERY*IZ is an Android application designed for fans of the K-Pop group 
 
 Legacy release available on [Google Play](https://play.google.com/store/apps/details?id=com.yolastudio.bilog)
 
+![Image 1](Storelisting_US_curated_1.jpeg)
+
 ## Features
 
 - **Photo Exploration**: Users can browse a regularly updated collection of IZONE photos, ensuring access to the latest images of the group.
@@ -22,8 +24,11 @@ Legacy release available on [Google Play](https://play.google.com/store/apps/det
   - Cloud Messaging
  
 ## Achievements
+- Improved push notification click-through rate by analyzing user engagement patterns and optimizing send times.
+- Over 15,000 K-Pop fans from 180+ countries have joined IZONE GALLERY*IZ.
+- Rated 4.8 from 700+ user reviews.
 
-Over 15,000 K-Pop fans across 180+ countries have signed up for IZONE GALLERY*IZ.
+![Image 2](Storelisting_US_curated_2.jpeg)
 
 ## Getting Started
 
